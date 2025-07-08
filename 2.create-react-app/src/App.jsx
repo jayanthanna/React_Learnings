@@ -1,5 +1,6 @@
 import { Button } from "./Button";
 import Hello from "./Hello";
+import Random from "./Random";
 
 function App() {
   return (
@@ -7,6 +8,11 @@ function App() {
       <h1>Hello World</h1>
       <Button />
       <Hello />
+      <Random />
+      <Random />
+      <Random />
+      <Random />
+      <Random />
     </div>
   );
 }
