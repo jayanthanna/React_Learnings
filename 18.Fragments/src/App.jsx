@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   let foodItems = ["Dal", "Green Vegetable", "Roti", "Salad", "Milk"];
+  // let foodItems = [];
+
+  // let emptymessage = foodItems.length === 0 ? <h3>I am still hungry</h3> : null;
 
   return (
     <React.Fragment>
@@ -14,6 +17,8 @@ const App = () => {
         <li class="list-group-item">Roti</li>
         <li class="list-group-item">Salad</li>
         <li class="list-group-item">Milk</li> */}
+        {/* {emptymessage} */}
+        {foodItems.length === 0 && <h3>I am still hungry.</h3>}
         {foodItems.map((item) => (
           <li key={item} className="list-group-item">
             {item}
