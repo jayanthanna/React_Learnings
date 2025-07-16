@@ -1,8 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import FoodItems from "./components/FoodItems";
+import ErrorMessage from "./components/ErrorMessage";
 
 const App = () => {
-  let foodItems = ["Dal", "Green Vegetable", "Roti", "Salad", "Milk"];
+  // let foodItems = ["Dal", "Green Vegetable", "Roti", "Salad", "Milk"];
   // let foodItems = [];
 
   // let emptymessage = foodItems.length === 0 ? <h3>I am still hungry</h3> : null;
@@ -18,12 +20,8 @@ const App = () => {
         <li class="list-group-item">Salad</li>
         <li class="list-group-item">Milk</li> */}
         {/* {emptymessage} */}
-        {foodItems.length === 0 && <h3>I am still hungry.</h3>}
-        {foodItems.map((item) => (
-          <li key={item} className="list-group-item">
-            {item}
-          </li>
-        ))}
+        {ErrorMessage}
+        <FoodItems />
       </ul>
       {/* </> */}
     </React.Fragment>
